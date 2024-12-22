@@ -1,0 +1,15 @@
+{
+  "name": "monorepo",
+  "private": true,
+  "devDependencies": {
+    "turbo": "^1.0.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "packageManager": "npm@7.0.0",
+  "dependencies": {
+    "monorepo": "file:"
+  }
+}

@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const api_1 = require("../controller/api");
+const authMiddleware_1 = require("../middleware/authMiddleware");
+const router = (0, express_1.Router)();
+router.get('/fetch-user-data', authMiddleware_1.authMiddleware, api_1.fetchUserData);
+router.put('/update-user-data', authMiddleware_1.authMiddleware, api_1.updateUserData);
+router.post('/add-user-data', authMiddleware_1.authMiddleware, api_1.createUser);
+exports.default = router;

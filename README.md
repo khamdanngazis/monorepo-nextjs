@@ -1,1 +1,3 @@
-# monorepo-nextjs
+# Next JS & Express JS
+
+## Setup
